@@ -42,6 +42,7 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
+![Screenshot from 2025-03-03 18-27-30](https://github.com/user-attachments/assets/fc3fd375-f574-45f9-aa8a-ddb38967ea85)
 ```
 chanchal singhvi
 c.k. shukla
@@ -52,6 +53,7 @@ sumit chakrobarty
 
 cat < file2
 ## OUTPUT
+![Screenshot from 2025-03-03 18-28-12](https://github.com/user-attachments/assets/47c4fa9f-bf42-4522-b294-e4e0b640793f)
 ```
 anil aggarwal
 barun sengupta
@@ -64,6 +66,8 @@ s.n. dasgupta
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
+![Screenshot from 2025-03-03 18-28-47](https://github.com/user-attachments/assets/28fa9e9a-3bd3-487e-9302-7472e12cbd7a)
+
 ```
 file1 file2 differ: char1,line1
 comm file1 file2
@@ -71,6 +75,8 @@ comm file1 file2
  
 comm file1 file2
  ## OUTPUT
+ ![Screenshot from 2025-03-03 18-29-18](https://github.com/user-attachments/assets/b93dc98b-da65-42f8-8518-03ec2acb0beb)
+
  ```
 anil aggarwal
 barun sengupta
@@ -84,6 +90,8 @@ s.n. dasgupta
  
 diff file1 file2
 ## OUTPUT
+![Screenshot from 2025-03-03 18-29-43](https://github.com/user-attachments/assets/37a0a55d-9adf-44d6-b3c3-11d3ade10a5f)
+
 ```
 --- file1
 +++ file2
@@ -119,6 +127,8 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
+![Screenshot from 2025-03-03 18-32-11](https://github.com/user-attachments/assets/5c4d7e20-173d-40a3-9f08-a4f5ea40caaa)
+
 ```
 Hel
 Thi
@@ -128,6 +138,8 @@ Thi
 
 cut -d "|" -f 1 file22
 ## OUTPUT
+![Screenshot from 2025-03-03 18-33-16](https://github.com/user-attachments/assets/b88300d9-ab44-42fa-8e04-54fd74b895b8)
+
 ```
 1001
 1002
@@ -138,6 +150,8 @@ cut -d "|" -f 1 file22
 
 cut -d "|" -f 2 file22
 ## OUTPUT
+![Screenshot from 2025-03-03 18-33-46](https://github.com/user-attachments/assets/1fdd2df0-d569-4e05-b01c-cfb183729fd3)
+
 ```
 Ram
 tom
@@ -157,6 +171,8 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
+![Screenshot from 2025-03-03 18-40-29](https://github.com/user-attachments/assets/917b9ffc-3be5-432b-9589-4a1a7fe4c56e)
+
 ```
 Hello world
 ```
@@ -164,6 +180,8 @@ Hello world
 
 grep hello newfile 
 ## OUTPUT
+![Screenshot from 2025-03-03 18-40-29 (copy)](https://github.com/user-attachments/assets/ef381929-d257-4b0c-8e0c-252330c29eb9)
+
 ```
 Hello world
 ```
@@ -172,6 +190,8 @@ Hello world
 
 grep -v hello newfile 
 ## OUTPUT
+![Screenshot from 2025-03-03 18-41-27](https://github.com/user-attachments/assets/144407e3-ae22-4d62-8552-849ef834170a)
+
 ```
 Hello world
 ```
@@ -180,6 +200,8 @@ Hello world
 
 cat newfile | grep -i "hello"
 ## OUTPUT
+![Screenshot from 2025-03-03 18-42-13](https://github.com/user-attachments/assets/7be111ab-d26b-41dd-9fcc-e229729d24bd)
+
 ```
 Hello world
 hello world
@@ -189,6 +211,8 @@ hello world
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
+![Screenshot from 2025-03-03 18-42-58](https://github.com/user-attachments/assets/043bc651-e72d-4931-871a-9bab4fc0872c)
+
 ```
 2
 ```
@@ -198,6 +222,8 @@ cat newfile | grep -i -c "hello"
 
 grep -R ubuntu /etc
 ## OUTPUT
+![Screenshot from 2025-03-03 18-44-53](https://github.com/user-attachments/assets/f08e4d7e-0332-4a6e-a8c2-45e9ae1806cc)
+
 ```
 grep: unrecognized option: R
 BusyBox v1.31.1 () multi-call binary.
@@ -235,6 +261,8 @@ Search for PATTERN in FILEs (or stdin)
 
 grep -w -n world newfile   
 ## OUTPUT
+![Screenshot from 2025-03-03 18-45-54](https://github.com/user-attachments/assets/63087e1b-2915-49d7-8028-d9bb0649f90c)
+
 ```
 1:Hello world
 2:hello world
@@ -262,6 +290,8 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
+![Screenshot from 2025-03-03 18-47-41](https://github.com/user-attachments/assets/9cf7a6d0-56b4-4c7c-90eb-76b738b482da)
+
 ```
 Hello world
 hello world
@@ -271,6 +301,8 @@ hello world
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
+![Screenshot from 2025-03-03 18-50-28](https://github.com/user-attachments/assets/822e29ac-19c3-49a6-911e-e8fbefdbcc4f)
+
 ```
 Hello world
 hello world
@@ -280,6 +312,8 @@ hello world
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
+![Screenshot from 2025-03-03 18-51-19](https://github.com/user-attachments/assets/0cce5f96-d8f0-47f4-bc19-de834a0c338d)
+
 ```
 Hello world
 hello world
@@ -290,6 +324,8 @@ hello world
 
 egrep '(^hello)' newfile 
 ## OUTPUT
+![Screenshot from 2025-03-03 18-52-09](https://github.com/user-attachments/assets/e3432065-03a9-433e-be8a-1c249b8bcc31)
+
 ```
 hello world
 ```
@@ -297,6 +333,8 @@ hello world
 
 egrep '(world$)' newfile 
 ## OUTPUT
+![Screenshot from 2025-03-03 18-52-45](https://github.com/user-attachments/assets/b92b2154-3421-4ba5-86fc-e27c1a148f15)
+
 ```
 hello world
 hello world
@@ -305,6 +343,8 @@ hello world
 
 egrep '(World$)' newfile 
 ## OUTPUT
+![Screenshot from 2025-03-03 18-53-27](https://github.com/user-attachments/assets/8bb673b8-5292-4e82-9120-6758aa2b13d5)
+
 ```
 Linux is best in the World
 ```
@@ -312,6 +352,8 @@ Linux is best in the World
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
+![Screenshot from 2025-03-03 20-59-06](https://github.com/user-attachments/assets/4121998e-1ee6-4efd-a99e-9028e885de36)
+
 ```
 Hello world
 hello world
@@ -322,6 +364,8 @@ Linux is best in this World
 
 egrep '[1-9]' newfile 
 ## OUTPUT
+![Screenshot from 2025-03-03 22-00-48](https://github.com/user-attachments/assets/8ec14413-49e0-4c8e-be22-ed14bd80b33b)
+
 ```
 Linux is world number 1
 ```
@@ -330,6 +374,8 @@ Linux is world number 1
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
+![Screenshot from 2025-03-03 22-16-48](https://github.com/user-attachments/assets/99f80032-fe96-49f7-8002-cef8fe22c746)
+
 ```
 Linux is world number 1
 ```
@@ -337,6 +383,8 @@ Linux is world number 1
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
+![Screenshot from 2025-03-03 22-17-38](https://github.com/user-attachments/assets/d2717875-4a17-48f1-842e-d31715b7481f)
+
 ```
 Linux is best in this World
 ```
@@ -344,6 +392,8 @@ Linux is best in this World
 
 egrep l{2} newfile
 ## OUTPUT
+![Screenshot from 2025-03-03 22-18-57](https://github.com/user-attachments/assets/69aab01e-d0f5-4ac9-9415-2159f8544fb6)
+
 ```
 Hello world
 hello world
@@ -353,6 +403,8 @@ hello world
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
+![Screenshot from 2025-03-03 22-19-59](https://github.com/user-attachments/assets/28ec672c-8567-4444-b77a-e2a934a4b782)
+
 ```
 Unix is predecessor
 Linux is best in this World
@@ -375,6 +427,8 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
+![Screenshot from 2025-03-03 22-26-52](https://github.com/user-attachments/assets/0429a541-7f13-4d89-b7d2-e71848e50a3f)
+
 ```
 1002 | tom | 5000 | Admin
 ```
@@ -383,6 +437,8 @@ sed -n -e '3p' file23
 
 sed -n -e '$p' file23
 ## OUTPUT
+![Screenshot from 2025-03-03 22-28-52](https://github.com/user-attachments/assets/e68afe49-b9f7-4bdd-87f4-cfc591d757d0)
+
 ```
 1001 | Ram | 10000 | HR
 ```
@@ -391,6 +447,8 @@ sed -n -e '$p' file23
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
+![Screenshot from 2025-03-03 22-30-30](https://github.com/user-attachments/assets/561553b8-bc0f-44b0-8ce7-c1913d0e5047)
+
 ```
 1001 | Sita | 10000 | HR
 1001 | Sita | 10000 | HR
@@ -406,6 +464,8 @@ sed  -e 's/Ram/Sita/' file23
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
+![Screenshot from 2025-03-03 22-31-40](https://github.com/user-attachments/assets/5dc0ca5d-b884-4ee1-98cb-e0e1c7204908)
+
 ```
 1001 | Ram | 10000 | HR
 1001 | Sita | 10000 | HR
@@ -421,6 +481,8 @@ sed  -e '2s/Ram/Sita/' file23
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
+![Screenshot from 2025-03-03 22-32-44](https://github.com/user-attachments/assets/a6a7e0be-8294-4729-be26-24965e2df4b7)
+
 ```
 1001 | Ram | 10000 | HR
 1001 | Ram | 10000 | HR
@@ -436,6 +498,8 @@ sed  '/tom/s/5000/6000/' file23
 
 sed -n -e '1,5p' file23
 ## OUTPUT
+![Screenshot from 2025-03-03 22-33-49](https://github.com/user-attachments/assets/7e4f6404-9c23-48d6-9a0b-87a520c5c0bb)
+
 ```
 1001 | Ram | 10000 | HR
 1001 | Ram | 10000 | HR
@@ -447,6 +511,7 @@ sed -n -e '1,5p' file23
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
+![Screenshot from 2025-03-03 22-33-49](https://github.com/user-attachments/assets/1842665e-79fd-4584-a1ff-4a598fac8c5e)
 ```
 1001 | Ram | 10000 | HR
 1002 | tom | 5000 | Admin
@@ -458,6 +523,8 @@ sed -n -e '2,/Joe/p' file23
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
+![Screenshot from 2025-03-03 22-35-24](https://github.com/user-attachments/assets/1c934f9f-6d3a-4a32-b65b-31f78e2b8d7a)
+
 ```
 1002 | tom | 5000 | Admin
 1003 | Joe | 7000 | Developer
@@ -467,6 +534,8 @@ sed -n -e '/tom/,/Joe/p' file23
 
 seq 10 
 ## OUTPUT
+![Screenshot from 2025-03-03 22-35-52](https://github.com/user-attachments/assets/6c715fd8-e4ef-447f-92cc-cec4ae2d1e3a)
+
 ```
 1
 2
@@ -484,6 +553,8 @@ seq 10
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
+![Screenshot from 2025-03-03 22-36-33](https://github.com/user-attachments/assets/ae951d5e-71a0-4ea4-9760-17ad880643e5)
+
 ```
 4
 5
@@ -494,6 +565,8 @@ seq 10 | sed -n '4,6p'
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
+![Screenshot from 2025-03-03 22-37-07](https://github.com/user-attachments/assets/035e2abc-1f21-44dd-a5c4-bdbdf13be9d7)
+
 ```
 2
 3
@@ -504,6 +577,8 @@ seq 10 | sed -n '2,~4p'
 
 seq 3 | sed '2a hello'
 ## OUTPUT
+![Screenshot from 2025-03-03 22-37-38](https://github.com/user-attachments/assets/1c0053a2-95eb-435b-a143-229fbc4482e8)
+
 ```
 1
 2
@@ -515,6 +590,8 @@ hello
 
 seq 2 | sed '2i hello'
 ## OUTPUT
+![Screenshot from 2025-03-03 22-38-02](https://github.com/user-attachments/assets/b72c6c02-e09d-4a1e-936f-6773b0a557d3)
+
 ```
 1
 hello
@@ -524,6 +601,8 @@ hello
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
+![Screenshot from 2025-03-03 22-38-36](https://github.com/user-attachments/assets/39e66117-4b7f-4aff-bf07-33ca9d109718)
+
 ```
 1
 hello
@@ -534,6 +613,8 @@ hello
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
+![Screenshot from 2025-03-03 22-39-45](https://github.com/user-attachments/assets/c310bca8-00c3-4f03-9560-901183c31fb9)
+
 ```
 $1001 | Ram | 10000 | HR
 $1002 | tom | 5000 | Admin
@@ -545,6 +626,8 @@ $1003 | Joe | 7000 | Developer
 sed -n '2,4{s/$/*/;p}' file23
 
 ##ouput 
+![Screenshot from 2025-03-03 22-40-29](https://github.com/user-attachments/assets/d0a3afd6-893c-4b48-a20a-cd70b33c5d2d)
+
 ```
 1001 | Ram | 10000 | HR*
 1002 | tom |  5000 | Admin*
@@ -561,6 +644,8 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
+![Screenshot from 2025-03-03 22-43-46](https://github.com/user-attachments/assets/56cf6b79-ec4e-4803-bf46-62d0a1ad880a)
+
 ```
 1001 | Ram | 10000 | HR
 1002 | tom |  5000 | Admin
@@ -581,6 +666,8 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
+![Screenshot from 2025-03-03 22-46-13](https://github.com/user-attachments/assets/e521ad0a-7e1a-4088-9e15-8bebbec2f829)
+
 ```
 1001 | Ram | 10000 | HR
 1002 | tom |  5000 | Admin
@@ -594,6 +681,8 @@ uniq file22
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
+ ![Screenshot from 2025-03-03 22-47-30](https://github.com/user-attachments/assets/a3d01fc8-644f-4499-a4da-acaabe53b38d)
+
 ```
 1001 | RAM | 10000 | HR
 1001 | RAM | 10000 | HR
@@ -619,6 +708,8 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
+ ![Screenshot from 2025-03-03 22-54-40](https://github.com/user-attachments/assets/79b4143c-9787-4f7e-9fcd-e34fe130c4e3)
+
 ```
 www.yahoo.com
 www.google.com
@@ -628,6 +719,8 @@ www.mrcet....com
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
+![Screenshot from 2025-03-03 22-56-51](https://github.com/user-attachments/assets/cfff961d-8621-429c-bb32-556217e7eba4)
+
 ```
 www.yahoo.com
 www.google.com
@@ -638,6 +731,8 @@ www.mrcet.com
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
+![Screenshot from 2025-03-03 23-01-49](https://github.com/user-attachments/assets/d6245cce-820a-4541-bfe9-521150d21599)
+
 ```
 bench.py
 file1
@@ -660,6 +755,8 @@ mv backup.tar backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
+![Screenshot from 2025-03-03 23-11-15](https://github.com/user-attachments/assets/af4e1210-2b36-44c4-bf25-ece46103c45e)
+
 ```
 drwxr-xr-x root/root         0 2024-08-16 10:12:02 backupdir/
 -rw-r--r-- root/root     13312 2024-08-16 10:10:04 backupdir/backup.tar
@@ -680,6 +777,8 @@ drwxr-xr-x root/root         0 2024-08-16 10:12:02 backupdir/
 
 tar -xvf backup.tar
 ## OUTPUT
+![Screenshot from 2025-03-03 23-11-33](https://github.com/user-attachments/assets/f4c892c6-f8b7-41f8-97ae-9ef96fea1c0c)
+
 ```
 backupdir/
 backupdir/backup.tar
@@ -700,10 +799,12 @@ gzip backup.tar
 
 ls .gz
 ## OUTPUT
+![Screenshot from 2025-03-03 23-12-01](https://github.com/user-attachments/assets/fc2a783f-8c56-47a6-b67c-a00691221aae)
+
  
 gunzip backup.tar.gz
 ## OUTPUT
-
+![Screenshot from 2025-03-03 23-20-01](https://github.com/user-attachments/assets/433d7289-3505-4600-a8c6-5cb5d4fca698)
  
 # Shell Script
 ```
@@ -713,7 +814,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-
+![Screenshot from 2025-03-03 23-36-59](https://github.com/user-attachments/assets/80d7e29f-3c97-430d-8b44-93c7795402b9)
  
 cat << stop > herecheck.txt
 ```
@@ -725,6 +826,8 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
+![Screenshot from 2025-03-03 23-42-28](https://github.com/user-attachments/assets/f1a27a90-42df-46f6-8e0f-3dbc8faa4a20)
+
 ```
 hello in this world
 i cant stop
@@ -768,6 +871,8 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
+![Screenshot from 2025-03-03 23-42-55](https://github.com/user-attachments/assets/e22e728b-09ab-4a30-987c-d2b46defb6c3)
+
 ```
 ./scriptest.sh: line 1: #!/bin/sh: not found
 “File name is ./scriptest.sh ”
@@ -817,12 +922,16 @@ PID   USER     TIME  COMMAND
  
 ls file1
 ## OUTPUT
+![Screenshot from 2025-03-03 23-43-46](https://github.com/user-attachments/assets/aba3205a-e0c8-47f7-9941-07f73f6edb12)
+
 ```
 file1
 ```
 
 echo $?
 ## OUTPUT 
+![Screenshot from 2025-03-03 23-44-14](https://github.com/user-attachments/assets/d84167fc-cb50-43b2-ae39-45f093c1232f)
+
 ```
 0
 ```
@@ -831,6 +940,8 @@ bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
+![Screenshot from 2025-03-03 23-45-50](https://github.com/user-attachments/assets/7e9726e2-4b09-49a3-a024-a453d15b3622)
+
 ```
 127
 ``` 
