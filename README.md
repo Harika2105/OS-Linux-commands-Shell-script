@@ -1623,10 +1623,10 @@ then
 else
 	echo "Number is NOT palindrome"
 fi
-![Screenshot from 2025-03-04 07-16-34](https://github.com/user-attachments/assets/9d15f3d5-f048-4531-8460-c4c53188ff31)
 
 ```
 
+![Screenshot from 2025-03-04 07-16-34](https://github.com/user-attachments/assets/936cfd69-62d4-4bee-975a-4dc801952a99)
 
 
 # RESULT:
