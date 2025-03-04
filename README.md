@@ -1,4 +1,4 @@
-## OS-Linux-commands-Shell-scripting
+![Screenshot from 2025-03-04 07-03-03](https://github.com/user-attachments/assets/9c93c8ac-7db2-44ee-b2e6-87b54772e7c1)## OS-Linux-commands-Shell-scripting
 Operating systems Lab exercise
 # Linux commands-Shell scripting
 Linux commands-Shell scripting
@@ -940,7 +940,7 @@ bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
-![Screenshot from 2025-03-03 23-45-50](https://github.com/user-attachments/assets/7e9726e2-4b09-49a3-a024-a453d15b3622)
+![Screenshot from 2025-03-03 23-44-14](https://github.com/user-attachments/assets/ffb57b62-9fb5-4702-9c6d-c9860a385b68)
 
 ```
 127
@@ -949,6 +949,7 @@ abcd
  
 echo $?
  ## OUTPUT
+![Screenshot from 2025-03-03 23-45-50](https://github.com/user-attachments/assets/16757fa1-afec-4afe-bdad-00f61f580ea5)
 
 ```
 127
@@ -989,7 +990,10 @@ fi
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
+
 ## OUTPUT
+![Screenshot from 2025-03-04 07-03-03](https://github.com/user-attachments/assets/8e456423-7beb-4ac9-a892-8c2ebb8a32f4)
+
 ```
 ./strcomp.sh: line 1: #!/bin/bash: not found
 baseball is less than hockey
@@ -1022,6 +1026,8 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+![Screenshot from 2025-03-04 07-04-09](https://github.com/user-attachments/assets/179e2762-81cc-4bed-963a-a3dc42bd4d9d)
+
 ```
 bash
 \#!/bin/bash
@@ -1078,7 +1084,9 @@ fi
 ```
 
 ./ifnested.sh 
+
 ## OUTPUT
+![Screenshot from 2025-03-04 07-05-08](https://github.com/user-attachments/assets/acaad9db-cc83-44bf-bb76-9ab2335ab57c)
 ```
 sh: ./ifnested.sh: Permission denied
 ```
@@ -1125,6 +1133,8 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
+![Screenshot from 2025-03-04 07-06-01](https://github.com/user-attachments/assets/8c403da8-843a-4eec-a4e9-273fb213ce46)
+
 
 # check if a file
 cat > ifnested.sh 
@@ -1200,8 +1210,9 @@ fi
 $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
-## OUTPUT
 
+## OUTPUT
+![Screenshot from 2025-03-04 07-06-56](https://github.com/user-attachments/assets/97210ed0-b7e5-4310-9f62-f08fbd4f3918)
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -1217,6 +1228,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+![Screenshot from 2025-03-04 07-07-18](https://github.com/user-attachments/assets/92a5282c-08ac-4bc6-8555-60d5535dbb48)
 
 # using the case command
 cat >casecheck.sh 
@@ -1236,8 +1248,11 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
+ ![Screenshot from 2025-03-04 07-07-56](https://github.com/user-attachments/assets/e7fc7408-35f6-476f-ba83-98771e24d6bc)
+
 cat > whiletest
+![Screenshot from 2025-03-04 07-09-09](https://github.com/user-attachments/assets/db951484-1386-49dc-be11-e27eedd6fe44)
+
 ```bash
 #!/bin/bash
 #while command test
@@ -1251,9 +1266,9 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
- 
- 
-cat untiltest.sh 
+![Screenshot from 2025-03-04 07-07-56](https://github.com/user-attachments/assets/360346dd-6149-4d59-86b4-22e048af9101)
+
+!cat untiltest.sh 
 ```bash
 \#using the until command
 var1=100
@@ -1264,10 +1279,11 @@ var1=$[ $var1 - 25 ]
 done
 ``` 
 $ chmod 755 untiltest.sh
- 
- 
+![Screenshot from 2025-03-04 07-09-32](https://github.com/user-attachments/assets/23b00b44-a962-46da-989b-6771149b9223)
  
 cat forin1.sh 
+![Screenshot from 2025-03-04 07-10-27](https://github.com/user-attachments/assets/2a509800-62ae-4708-8963-b55dc70fb074)
+
 ```bash
 \#!/bin/bash
 \#basic for command
@@ -1281,6 +1297,8 @@ $ chmod 755 forin1.sh
  
  
 cat forin2.sh 
+![Screenshot from 2025-03-04 07-10-43](https://github.com/user-attachments/assets/8cb9caf5-ba4a-478e-a2b6-8907de84989a)
+
 ```bash
 \#!/bin/bash
 \# another example of how not to use the for command
@@ -1304,7 +1322,8 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
- 
+ ![Screenshot from 2025-03-04 07-10-43](https://github.com/user-attachments/assets/417a888f-983b-44f4-bd38-a0edd512cb9f)
+
 cat forin3.sh 
 ```bash
 \#!/bin/bash
@@ -1315,7 +1334,8 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
- 
+ ![Screenshot from 2025-03-04 07-10-54](https://github.com/user-attachments/assets/bea565ed-3e60-4fa5-a923-a2252fd878d6)
+
 cat forin1.sh 
 ```bash
 #!/bin/bash
@@ -1328,6 +1348,7 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -1339,6 +1360,8 @@ echo "Visit beautiful $file“
 done
 ```
 $ chmod 777 forinfile.sh
+![Screenshot from 2025-03-04 07-11-11](https://github.com/user-attachments/assets/22316a6f-9a79-4e8c-b309-aa186ccec983)
+
 $ cat cities
 Hyderabad
 Alampur
@@ -1349,7 +1372,6 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
-
 
 cat forctype.sh 
 ```bash
@@ -1363,6 +1385,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
+![Screenshot from 2025-03-04 07-11-38](https://github.com/user-attachments/assets/b4f16516-7f1e-4266-80e4-a89a6802e222)
 
 cat forctype1.sh 
 ```bash
@@ -1376,6 +1399,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+![Screenshot from 2025-03-04 07-11-45](https://github.com/user-attachments/assets/56bb29a9-e363-4afb-9f6e-2b09a9f20e5f)
 
 cat fornested1.sh 
 ```bash
@@ -1394,7 +1418,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-
+ ![Screenshot from 2025-03-04 07-12-36](https://github.com/user-attachments/assets/8b51e43c-073a-46fc-bfa6-d405a1844ff9)
  
 cat forbreak.sh 
 ```bash
@@ -1411,6 +1435,7 @@ done
 echo "The for loop is completed“
 ```
 ## OUTPUT
+![Screenshot from 2025-03-04 07-12-53](https://github.com/user-attachments/assets/a8e75390-3a09-4e8c-ac94-5ec62a12d5e0)
 
 $ chmod 755 forbreak.sh
  
@@ -1436,7 +1461,8 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+ ![Screenshot from 2025-03-04 07-13-13](https://github.com/user-attachments/assets/a379ce12-4ede-48b3-8230-c41f9171a3f2)
+
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -1450,7 +1476,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-
+![Screenshot from 2025-03-04 07-13-37](https://github.com/user-attachments/assets/6e39b304-7856-418b-a0cf-c5dadca1e896)
 
  cat exread1.sh
 ```bash
@@ -1463,7 +1489,7 @@ $ chmod 755 exread1.sh
 
 ## OUTPUT
 
-
+![Screenshot from 2025-03-04 07-13-43](https://github.com/user-attachments/assets/f5c39456-f600-4d73-99e3-31e3410f4057)
 
 $ ./exread1.sh 
  
@@ -1483,6 +1509,8 @@ echo "Usage: badtest1 a b"
 fi
 ```
 ## OUTPUT
+![Screenshot from 2025-03-04 07-13-58](https://github.com/user-attachments/assets/1cedb859-412c-46c5-ba4e-c18402f5e70e)
+
  ./funcex.sh 
 
  
@@ -1500,6 +1528,8 @@ done
 $ chmod 777 argshift.sh
 
 ## OUTPUT
+![Screenshot from 2025-03-04 07-15-22](https://github.com/user-attachments/assets/470cc4ee-209f-45c8-a320-ef5c2829c405)
+
 $ ./argshift.sh 1 2 3
  
  cat argshift1.sh
@@ -1517,6 +1547,8 @@ done
 ```
 $ chmod 777 argshift.sh
 ## OUTPUT
+![Screenshot from 2025-03-04 07-15-34](https://github.com/user-attachments/assets/3276aedf-93e0-4c9c-aea9-2340e3f92565)
+
 $ ./argshift.sh 1 2 3
  
 cat argshift.sh
@@ -1530,6 +1562,9 @@ done
 set +x
 ```
 ## OUTPUT
+![Screenshot from 2025-03-04 07-15-57](https://github.com/user-attachments/assets/f45d5a76-4bc4-4b24-a299-225578c18079)
+
+
  ./argshift.sh 1 2 3
  
  
@@ -1562,7 +1597,8 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+ ![Screenshot from 2025-03-04 07-16-17](https://github.com/user-attachments/assets/cc975b0d-a5b5-4028-a3c7-0fdee1eb7c30)
+
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1587,6 +1623,8 @@ then
 else
 	echo "Number is NOT palindrome"
 fi
+![Screenshot from 2025-03-04 07-16-34](https://github.com/user-attachments/assets/9d15f3d5-f048-4531-8460-c4c53188ff31)
+
 ```
 
 
