@@ -1,4 +1,4 @@
-![Screenshot from 2025-03-04 07-03-03](https://github.com/user-attachments/assets/9c93c8ac-7db2-44ee-b2e6-87b54772e7c1)## OS-Linux-commands-Shell-scripting
+
 Operating systems Lab exercise
 # Linux commands-Shell scripting
 Linux commands-Shell scripting
